@@ -1,7 +1,6 @@
 .hero {
   margin: 8%;
-  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg")
-    no-repeat;
+  background: url("../assets/home/mobile/image-hero-coffeepress.jpg") no-repeat;
 
   height: 20rem;
   border-radius: 10px;
@@ -29,8 +28,8 @@
   font-weight: var(--why-choose-us-paragraph-font-weight);
   line-height: var(--why-choose-us-paragraph-line-height);
   color: var(--light-cream);
-  opacity: 0.8;
   font-family: var(--why-choose-us-font-family);
+  opacity: 0.8;
 }
 .create--plan--button {
   background-color: var(--dark-cyan);

@@ -1,0 +1,38 @@
+.icon {
+  width: 3rem;
+  /* object-fit: contain; */
+}
+.article {
+  background-color: var(--dark-cyan);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 15rem;
+  margin: 8% 6%;
+  flex-direction: column;
+}
+.article-contents {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+.description {
+  font-size: var(--why-choose-us-paragraph-font-size);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--light-cream);
+  opacity: 0.8;
+  text-align: center;
+  width: 65%;
+  font-family: var(--why-choose-us-font-family);
+}
+.subheader {
+  font-weight: var(--create-plan-header-font-weight);
+  font-size: 1rem;
+  line-height: var(--create-plan-header-line-height);
+  color: var(--light-cream);
+  font-family: "Fraunces", serif;
+}

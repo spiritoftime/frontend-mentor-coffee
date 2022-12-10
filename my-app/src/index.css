@@ -9,11 +9,8 @@
   --Pale-orange: #fdd6ba;
   --light-cream: #fefcf7;
   --grey: #83888f;
-  --our-collection-linear-gradient: linear-gradient(
-    180deg,
-    rgba(254, 252, 247, 0.0001) 0%,
-    #fefcf7 100%
-  );
+  --dark-blue: #2c343e;
+
   /* hero section */
 
   /* create plan section */

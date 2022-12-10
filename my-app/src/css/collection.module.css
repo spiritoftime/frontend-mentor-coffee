@@ -1,0 +1,25 @@
+.collection-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.subheader {
+  text-align: center;
+  background: var(--our-collection-linear-gradient);
+  /* fallback color */
+  background-color: var(--grey);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: var(--create-plan-header-font-size);
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+.choose-us-section {
+  background-color: var(--dark-blue);
+  position: relative;
+  margin: 8%;
+  block-size: 35rem;
+}
+.choose-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 8% 6%;
+}
+.subheader {
+  font-size: var(--why-choose-us-subheader-font-size);
+  font-family: var(--btn-font-family);
+  font-weight: var(--create-plan-header-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--light-cream);
+}
+
+.paragraph {
+  font-size: var(--why-choose-us-paragraph-font-size);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--light-cream);
+  text-align: center;
+  opacity: 0.8;
+  font-family: var(--why-choose-us-font-family);
+}
+.articles {
+  position: absolute;
+}
+/* url("../assets/about/mobile/bg-quality.png") */
