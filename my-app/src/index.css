@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 :root {
+  --pink: rgba(253, 214, 186, 1);
+
   --dark-cyan: #0e8784;
   --Dark-grey-blue: #333d4b;
   --Pale-orange: #fdd6ba;
@@ -48,5 +50,5 @@
   --btn-font-family: "Fraunces", serif;
   --btn-font-size: 1.125rem;
   --btn-font-weight: 900;
-  --btn-text-color: var(var(--light-cream));
+  --btn-text-color: var(--light-cream);
 }

@@ -1,14 +1,19 @@
 .icon {
   width: 8.5rem;
 }
-.icon.hamburger {
+.nav-icon {
   height: 1rem;
   /* prevents hamburger icon from expanding to fill 100% width */
   display: inline-flex;
-  max-width: fit-content;
+  width: fit-content;
 }
 .navbar-flex {
   display: flex;
   justify-content: space-between;
   padding: 6% 4%;
+}
+.icon-div {
+  display: inline-flex;
+  max-width: fit-content;
+  justify-content: flex-end;
 }

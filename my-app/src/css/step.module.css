@@ -1,0 +1,25 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* align-items: center; */
+}
+.number {
+  color: var(--pink);
+  font-family: var(--btn-font-family);
+  font-weight: var(--collections-header-font-weight);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+.subheader {
+  color: var(--Dark-grey-blue);
+  font-weight: var(--collections-header-font-weight);
+  font-family: var(--btn-font-family);
+}
+.description {
+  font-size: var(--how-it-works-paragraph-font-size);
+  font-weight: var(-why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--Dark-grey-blue);
+}

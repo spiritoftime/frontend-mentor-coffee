@@ -1,6 +1,19 @@
 import React from "react";
 import classes from "../../css/navbar.module.css";
+import { useState } from "react";
 const Navbar = () => {
+  const [hamburgerClicked, setHamburgerClicked] = useState(false);
+  const [isCross, setIsCross] = useState(false);
+  const [crossClicked, setCrossClicked] = useState(false);
+  const clickHamburgerHandler = () => {
+    setHamburgerClicked(true);
+    setIsCross(true);
+  };
+  const clickCrossHandler = () => {
+    setIsCross(false);
+    setHamburgerClicked(false);
+  };
+
   return (
     <header>
       <nav className={classes["navbar-flex"]}>
@@ -20,17 +33,34 @@ const Navbar = () => {
             ></path>
           </g>
         </svg>
-        <svg
-          className={`${classes.icon} ${classes.hamburger}`}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 15"
-        >
-          <path
-            d="M14.5 12a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13zm0-6a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13zm0-6a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13z"
-            fill="#333D4B"
-            fillRule="evenodd"
-          ></path>
-        </svg>
+        {!hamburgerClicked && (
+          <svg
+            className={`${classes["nav-icon"]} ${classes.hamburger}`}
+            onClick={clickHamburgerHandler}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 15"
+          >
+            <path
+              d="M14.5 12a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13zm0-6a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13zm0-6a1.5 1.5 0 010 3h-13a1.5 1.5 0 010-3h13z"
+              fill="#333D4B"
+              fillRule="evenodd"
+            ></path>
+          </svg>
+        )}
+        {isCross && (
+          <svg
+            onClick={clickCrossHandler}
+            className={`${classes["nav-icon"]} ${classes.cross}`}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0.87 0.37 12.25 12.25"
+          >
+            <path
+              d="M12.657.843a1.5 1.5 0 010 2.121L9.12 6.5l3.536 3.536a1.5 1.5 0 11-2.121 2.12L7 8.622l-3.536 3.536a1.5 1.5 0 11-2.12-2.121L4.877 6.5 1.343 2.964A1.5 1.5 0 113.464.844L7 4.377 10.536.843a1.5 1.5 0 012.12 0z"
+              fill="#333D4B"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        )}
       </nav>
     </header>
   );

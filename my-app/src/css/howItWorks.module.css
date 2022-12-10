@@ -1,3 +1,26 @@
 .how-it-works {
   margin-top: 30rem;
+  margin: 30rem 8% 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.create--plan--button {
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--dark-cyan);
+  color: var(--light-cream);
+  border-radius: 8px;
+  font-family: var(--btn-font-family);
+  display: inline-flex;
+  padding: 4% 8%;
+  max-width: fit-content;
+  font-weight: var(--btn-font-weight);
+  font-size: var(--btn-font-size);
 }
