@@ -1,3 +1,46 @@
 .hero {
-  padding: 2% 4%;
+  margin: 8%;
+  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg")
+    no-repeat;
+
+  height: 20rem;
+  border-radius: 10px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.hero-contents {
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-header {
+  font-weight: var(--create-plan-header-font-weight);
+  font-size: var(--create-plan-header-font-size);
+  line-height: var(--create-plan-header-line-height);
+  color: var(--light-cream);
+  font-family: "Fraunces", serif;
+}
+.hero-description {
+  font-size: var(--why-choose-us-paragraph-font-size);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--light-cream);
+  opacity: 0.8;
+  font-family: var(--why-choose-us-font-family);
+}
+.create--plan--button {
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--dark-cyan);
+  color: var(--light-cream);
+  border-radius: 8px;
+  font-family: var(--btn-font-family);
+  display: inline-flex;
+  padding: 4% 8%;
+  max-width: fit-content;
+  font-weight: var(--btn-font-weight);
+  font-size: var(--btn-font-size);
 }
