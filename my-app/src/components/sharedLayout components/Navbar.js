@@ -1,17 +1,11 @@
 import React from "react";
 import classes from "../../css/navbar.module.css";
-import { useState, useReducer } from "react";
+import { useState,  } from "react";
 
-import Modal from "./Modal";
-const reducer = (state, action)=>{
-  return {...action, ...state}
-}
+import NavModal from "./Modal";
+
 const Navbar = () => {
-  const [modalLinksClicked, dispatch] = useReducer(reducer, {
-    homeIsClicked:false,
-    aboutUsIsClicked:false,
-    subscribeIsClicked:false
-  })
+
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isCross, setIsCross] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -77,7 +71,7 @@ const Navbar = () => {
           </svg>
         )}
       </nav>
-      {showModal && <Modal dispatch={dispatch} />}
+      {showModal && <NavModal closeNav={clickCrossHandler} />}
     </header>
   );
 };
