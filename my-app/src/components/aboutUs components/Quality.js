@@ -1,10 +1,14 @@
 import React from "react";
-import classes from "../../css/commitment.module.css";
+import classes from "../../css/quality.module.css";
 import Coffee from "../../assets/about/mobile/image-quality.jpg";
 const Quality = () => {
   return (
     <div className={classes["quality-section"]}>
-      <img src={Coffee} alt="top-notch coffee from Coffeeroasters"></img>
+      <img
+        className={classes["img"]}
+        src={Coffee}
+        alt="top-notch coffee from Coffeeroasters"
+      ></img>
       <div className={classes["text-div"]}>
         <h2 className={classes["subheader"]}>Uncompromising quality</h2>
         <p className={classes["paragraph"]}>

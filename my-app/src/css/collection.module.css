@@ -5,17 +5,19 @@
 }
 .subheader {
   text-align: center;
-  background: var(--our-collection-linear-gradient);
+  color: var(--grey);
+  font-size: var(--create-plan-header-font-size);
+  font-weight: var(--create-plan-header-font-weight);
+
+  /* background: var(--our-collection-linear-gradient); */
   /* fallback color */
-  background-color: var(--grey);
-  background-size: 100%;
+  /* background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  font-size: var(--create-plan-header-font-size);
+  -moz-text-fill-color: transparent; */
 }
 .products {
   display: flex;

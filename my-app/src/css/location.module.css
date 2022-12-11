@@ -1,0 +1,17 @@
+.location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.subheader {
+  text-align: center;
+  color: var(--grey);
+  font-size: var(--create-plan-header-font-size);
+  font-weight: var(--create-plan-header-font-weight);
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
