@@ -8,6 +8,7 @@ query:
 1. so i was trying to export a modal into Navbar.js. i exported it as default with the name of NavModal, as seen in https://ibb.co/Sy491pG
 
 At Modal.js however, i accidentally imported it as Modal, as seen in https://ibb.co/yfSqv0p. My question is why is that working, even though i did not import it as NavModal? Thank you!
+EDIT: default exports can only have 1 export. Hence, the name does not really matter, you will still be able to import the same thing regardless of the naming.
 
 2. What i intended to do: https://ibb.co/z53BPBQ - i wanted to output 3 of those blue components.
 

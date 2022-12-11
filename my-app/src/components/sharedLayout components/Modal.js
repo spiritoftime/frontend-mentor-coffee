@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import classes from "../../css/modal.module.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const NavModal = ({ closeNav }) => {
   return ReactDOM.createPortal(
     <div className={classes.modal}>
-      <NavLink
+      <Link
         onClick={() => {
           closeNav();
         }}
@@ -13,8 +13,8 @@ const NavModal = ({ closeNav }) => {
         to="/"
       >
         Home
-      </NavLink>
-      <NavLink
+      </Link>
+      <Link
         onClick={() => {
           closeNav();
         }}
@@ -22,8 +22,8 @@ const NavModal = ({ closeNav }) => {
         to="/about-us"
       >
         About Us
-      </NavLink>
-      <NavLink
+      </Link>
+      <Link
         onClick={() => {
           closeNav();
         }}
@@ -31,7 +31,7 @@ const NavModal = ({ closeNav }) => {
         to="/subscribe"
       >
         Create Your Plan
-      </NavLink>
+      </Link>
     </div>,
     document.querySelector("#modal-root")
   );

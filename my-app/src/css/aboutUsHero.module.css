@@ -1,0 +1,33 @@
+.hero {
+  margin: 8%;
+  background: url("../assets/about/mobile/image-hero-whitecup.jpg") no-repeat;
+  height: 20rem;
+  background-size: cover;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+.hero-contents {
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-header {
+  font-weight: var(--create-plan-header-font-weight);
+  font-size: var(--create-plan-header-font-size);
+  line-height: var(--create-plan-header-line-height);
+  color: var(--light-cream);
+  font-family: "Fraunces", serif;
+}
+.hero-description {
+  font-size: var(--why-choose-us-paragraph-font-size);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--light-cream);
+  font-family: var(--why-choose-us-font-family);
+  opacity: 0.8;
+}
