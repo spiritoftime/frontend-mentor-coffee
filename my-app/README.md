@@ -19,3 +19,23 @@ Because i wanted to render different svgs per article, i had to pass them as a p
 what i did: i used dompurify and setdangerouslyhtml as seen in https://ibb.co/WK6TsVw, then passed icon into the article component, as seen in https://ibb.co/WtGbZ8k
 
 was wondering if there was a better way to approach this? thank you!
+
+3. useEffect dependencies dont have to be inside of the useEffect function? eg.
+   export default function useScrollToTop() {
+   const { pathname } = useLocation();
+
+useEffect(() => {
+// "document.documentElement.scrollTo" is the magic for React Router Dom v6
+document.documentElement.scrollTo({
+top: 0,
+left: 0,
+behavior: "instant", // Optional if you want to skip the scrolling animation
+});
+}, [pathname]);
+// why is pathname able to be added as a dependency here, even though pathname is not used inside of the useEffect?
+return null;
+}
+
+To go learn:
+
+1. custom-hook scrollToTop to scroll to the top whenever we change routes.
