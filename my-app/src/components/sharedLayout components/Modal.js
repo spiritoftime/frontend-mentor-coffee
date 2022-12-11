@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import classes from "../../css/modal.module.css";
+import { NavLink } from "react-router-dom";
 const NavModal = () => {
   return ReactDOM.createPortal(
     <div className={classes.modal}>
-      <a className={classes["link"]} href="#">
+      <NavLink className={classes["link"]} to="/">
         Home
-      </a>
-      <a className={classes["link"]} href="#">
+      </NavLink>
+      <NavLink className={classes["link"]} to="/about-us">
         About Us
-      </a>
-      <a className={classes["link"]} href="#">
+      </NavLink>
+      <NavLink className={classes["link"]} to="/subscribe">
         Create Your Plan
-      </a>
+      </NavLink>
     </div>,
     document.querySelector("#modal-root")
   );

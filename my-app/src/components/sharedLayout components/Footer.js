@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../../css/footer.module.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className={classes["flex-column"]}>
@@ -20,15 +21,15 @@ const Footer = () => {
         </g>
       </svg>
       <div className={classes["links"]}>
-        <a href="#" className={classes["link"]}>
+        <Link to="/" className={classes["link"]}>
           HOME
-        </a>
-        <a href="#" className={classes["link"]}>
+        </Link>
+        <Link to="/about-us" className={classes["link"]}>
           ABOUT US
-        </a>
-        <a href="#" className={classes["link"]}>
+        </Link>
+        <Link to="/subscribe" className={classes["link"]}>
           CREATE YOUR PLAN
-        </a>
+        </Link>
         <div className={classes["social-icons"]}>
           <svg
             className={`${classes["social-icon"]}`}

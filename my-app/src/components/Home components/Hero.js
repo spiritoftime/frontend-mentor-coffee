@@ -1,6 +1,12 @@
 import React from "react";
 import classes from "../../css/hero.module.css";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  // useNavigate is a hook, so you need to create the navigate variable first, and not just useNvaigate('/subscribe')
+  const navigate = useNavigate();
+  const navigateHandler = (e) => {
+    navigate("/subscribe");
+  };
   return (
     <section className={classes.hero}>
       <div className={classes["hero-contents"]}>
@@ -10,7 +16,10 @@ const Hero = () => {
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
-        <button className={classes["create--plan--button"]}>
+        <button
+          onClick={navigateHandler}
+          className={classes["create--plan--button"]}
+        >
           Create your plan
         </button>
       </div>
