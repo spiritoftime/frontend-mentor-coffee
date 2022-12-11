@@ -5,6 +5,11 @@
 }
 :root {
   --pink: rgba(253, 214, 186, 1);
+  --modal-linear-gradient: linear-gradient(
+    180deg,
+    #fefcf7 25%,
+    rgba(254, 252, 247, 0.504981) 55.94%
+  );
 
   --dark-cyan: #0e8784;
   --Dark-grey-blue: #333d4b;
@@ -51,4 +56,7 @@
   --btn-font-size: 1.125rem;
   --btn-font-weight: 900;
   --btn-text-color: var(--light-cream);
+}
+.overflow {
+  overflow-y: hidden;
 }

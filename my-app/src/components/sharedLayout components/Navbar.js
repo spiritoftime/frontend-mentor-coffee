@@ -1,18 +1,24 @@
 import React from "react";
 import classes from "../../css/navbar.module.css";
 import { useState } from "react";
+import Modal from "./Modal";
 const Navbar = () => {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isCross, setIsCross] = useState(false);
-  const [crossClicked, setCrossClicked] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const clickHamburgerHandler = () => {
     setHamburgerClicked(true);
     setIsCross(true);
+    setShowModal(true);
+    document.body.classList.toggle("overflow");
   };
   const clickCrossHandler = () => {
     setIsCross(false);
     setHamburgerClicked(false);
+    setShowModal(false);
+    document.body.classList.toggle("overflow");
   };
+  // prevent user from scrolling down when modal is shown
 
   return (
     <header>
@@ -62,6 +68,7 @@ const Navbar = () => {
           </svg>
         )}
       </nav>
+      {showModal && <Modal />}
     </header>
   );
 };
