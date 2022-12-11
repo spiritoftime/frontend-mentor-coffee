@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../css/hero.module.css";
+import classes from "../../css/subscribehero.module.css";
 const Hero = () => {
   return (
     <section className={classes.hero}>

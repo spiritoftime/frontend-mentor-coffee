@@ -1,0 +1,9 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: var(--dark-blue);
+  align-items: center;
+  padding: 20% 6%;
+  border-radius: 10px;
+}

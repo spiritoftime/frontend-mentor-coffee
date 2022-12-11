@@ -1,11 +1,25 @@
 import React from "react";
 import classes from "../../css/step.module.css";
-const Step = ({ step, subheader, description }) => {
+const Step = ({ step, subheader, description, page = "" }) => {
   return (
     <div className={classes["step"]}>
       <span className={classes["number"]}>{step}</span>
-      <h2 className={classes["subheader"]}>{subheader}</h2>
-      <p className={classes["description"]}>{description}</p>
+      <h2
+        className={
+          page === "" ? classes["subheader"] : classes["subscribe-subheader"]
+        }
+      >
+        {subheader}
+      </h2>
+      <p
+        className={
+          page === ""
+            ? classes["description"]
+            : classes["subscribe-description"]
+        }
+      >
+        {description}
+      </p>
     </div>
   );
 };
