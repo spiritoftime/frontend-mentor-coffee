@@ -20,7 +20,8 @@
   font-weight: var(--create-plan-header-font-weight);
   font-family: var(--btn-font-family);
 }
-.icon {
+.icon,
+.close {
   width: 1rem;
 }
 .close {

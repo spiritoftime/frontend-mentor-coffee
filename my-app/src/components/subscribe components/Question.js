@@ -1,8 +1,12 @@
 import React from "react";
 import classes from "../../css/question.module.css";
 import Option from "./Option";
-
+import { useState } from "react";
 const Question = ({ question: { question, options } }) => {
+  const [showOptions, setShowOptions] = useState(true);
+  const clickDisplayOptionHandler = (e) => {
+    setShowOptions((prevstate) => !prevstate);
+  };
   const optionsArray = Object.entries(options).reduce(
     (acc, [key, value], idx) => {
       const obj = { ...value, key: idx };
@@ -17,7 +21,8 @@ const Question = ({ question: { question, options } }) => {
       <div className={classes["question-bar"]}>
         <h2 className={classes["question-subheader"]}>{question}</h2>
         <svg
-          className={classes["icon"]}
+          onClick={clickDisplayOptionHandler}
+          className={showOptions ? classes["icon"] : classes["close"]}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0.59 0.59 18.19 11.92"
         >
@@ -29,9 +34,10 @@ const Question = ({ question: { question, options } }) => {
         </svg>
       </div>
       <div className={classes["options"]}>
-        {optionsArray.map((option) => (
-          <Option key={option.key} option={option} />
-        ))}
+        {showOptions &&
+          optionsArray.map((option) => (
+            <Option key={option.key} option={option} />
+          ))}
       </div>
     </div>
   );

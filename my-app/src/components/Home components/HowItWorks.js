@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../../css/howItWorks.module.css";
+import { useNavigate } from "react-router-dom";
 import Step from "./Step";
 const steps = [
   {
@@ -25,6 +26,10 @@ const steps = [
   },
 ];
 const HowItWorks = () => {
+  const navigate = useNavigate();
+  const navigateHandler = (e) => {
+    navigate("/subscribe");
+  };
   return (
     <section className={classes["how-it-works"]}>
       <h2 className={classes["subheader"]}>How it works</h2>
@@ -33,7 +38,10 @@ const HowItWorks = () => {
           <Step {...step} />
         ))}
       </div>
-      <button className={classes["create--plan--button"]}>
+      <button
+        onClick={navigateHandler}
+        className={classes["create--plan--button"]}
+      >
         Create your plan
       </button>
     </section>
