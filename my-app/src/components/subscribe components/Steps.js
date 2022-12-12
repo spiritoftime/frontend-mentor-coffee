@@ -1,6 +1,6 @@
 import React from "react";
 import Step from "../Home components/Step";
-import classes from "../../css/steps.module.css";
+import classes from "../../css/subscribeSteps.module.css";
 const steps = [
   {
     step: "01",

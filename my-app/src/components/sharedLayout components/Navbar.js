@@ -4,7 +4,11 @@ import { useState, useContext } from "react";
 import { ShowSubscribeModalContext } from "../../App";
 import NavModal from "./Modal";
 import SubscribeModal from "../subscribe components/SubscribeModal";
+import useViewPort from "../../custom-hooks/useViewPort";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
+  const width = useViewPort();
   const { showSubscribeModal } = useContext(ShowSubscribeModalContext);
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isCross, setIsCross] = useState(false);
@@ -20,9 +24,9 @@ const Navbar = () => {
     setIsCross(false);
     setHamburgerClicked(false);
     setShowModal(false);
+    // prevent user from scrolling down when modal is shown
     document.body.classList.toggle("overflow");
   };
-  // prevent user from scrolling down when modal is shown
 
   return (
     <header>
@@ -43,7 +47,20 @@ const Navbar = () => {
             ></path>
           </g>
         </svg>
-        {!hamburgerClicked && (
+        {width >= 640 && (
+          <div className={classes["links"]}>
+            <Link to="/" className={classes["link"]}>
+              HOME
+            </Link>
+            <Link to="/about-us" className={classes["link"]}>
+              ABOUT US
+            </Link>
+            <Link to="/subscribe" className={classes["link"]}>
+              CREATE YOUR PLAN
+            </Link>
+          </div>
+        )}
+        {!hamburgerClicked && width < 640 && (
           <svg
             className={`${classes["nav-icon"]} ${classes.hamburger}`}
             onClick={clickHamburgerHandler}

@@ -47,6 +47,7 @@
   --how-it-works-header-line-height: 1.25;
 
   --how-it-works-paragraph-font-size: clamp(0.9rem, 0.4rem + 3vw, 1.7rem);
+  --how-it-works-paragraph-font-size-tablet: clamp(1rem, 0.2rem + 2vw, 1.8rem)
   --how-it-works-paragraph-line-height: 1.8;
   --how-it-works-subheader-font-size: 1.75rem;
   --how-it-works-subheader-line-height: 1.15;

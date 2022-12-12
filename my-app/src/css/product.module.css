@@ -31,3 +31,16 @@
 
   text-align: center;
 }
+@media (min-width: 640px) {
+  .product-article {
+    flex-direction: row;
+  }
+  .product-description {
+    text-align: left;
+  }
+  .product-name {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

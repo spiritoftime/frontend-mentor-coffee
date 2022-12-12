@@ -18,8 +18,21 @@
   max-width: fit-content;
   justify-content: flex-end;
 }
+.link {
+  font-size: var(--footer-text-font-size);
+  font-weight: var(--footer-text-font-weight);
+  text-decoration: none;
+  color: var(--grey);
+  display: inline-flex;
+  max-width: fit-content;
+}
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 @media (min-width: 640px) {
-  .nav-icon {
-    display: none;
+  .icon {
+    width: 10.5rem;
   }
 }

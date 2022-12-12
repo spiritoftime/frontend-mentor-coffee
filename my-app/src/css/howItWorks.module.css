@@ -26,3 +26,16 @@
   font-weight: var(--btn-font-weight);
   font-size: var(--btn-font-size);
 }
+@media (min-width: 640px) {
+  .steps {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .how-it-works {
+    align-items: flex-start;
+  }
+  .create--plan--button {
+    padding: 1rem;
+  }
+}

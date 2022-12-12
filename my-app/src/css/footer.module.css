@@ -1,3 +1,8 @@
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .icon {
   width: 8.5rem;
 }
@@ -34,4 +39,16 @@
 }
 .social-icon {
   width: 1rem;
+}
+@media (min-width: 640px) {
+  .flex-column {
+    gap: 2rem;
+  }
+  .links {
+    flex-direction: row;
+  }
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
 }

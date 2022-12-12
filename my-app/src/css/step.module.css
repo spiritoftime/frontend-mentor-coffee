@@ -28,7 +28,7 @@
 .description,
 .subscribe-description {
   font-size: var(--how-it-works-paragraph-font-size);
-  font-weight: var(-why-choose-us-paragraph-font-weight);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
   line-height: var(--why-choose-us-paragraph-line-height);
   text-align: justify;
 }
@@ -37,4 +37,23 @@
 }
 .subscribe-description {
   color: var(--light-cream);
+}
+@media (min-width: 640px) {
+  .step {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .description {
+    font-size: var(--how-it-works-paragraph-font-size-tablet);
+  }
+  .number,
+  .subheader,
+  .subscribe-subheader,
+  .description,
+  .subscribe-description {
+    text-align: left;
+  }
+  .subheader {
+    height: 3.7rem;
+  }
 }

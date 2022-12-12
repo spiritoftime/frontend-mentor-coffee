@@ -25,3 +25,8 @@
   gap: 1rem;
   align-items: center;
 }
+@media (min-width: 640px) {
+  .products {
+    gap: 3rem;
+  }
+}

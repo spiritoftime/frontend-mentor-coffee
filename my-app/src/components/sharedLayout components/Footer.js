@@ -20,16 +20,18 @@ const Footer = () => {
           ></path>
         </g>
       </svg>
-      <div className={classes["links"]}>
-        <Link to="/" className={classes["link"]}>
-          HOME
-        </Link>
-        <Link to="/about-us" className={classes["link"]}>
-          ABOUT US
-        </Link>
-        <Link to="/subscribe" className={classes["link"]}>
-          CREATE YOUR PLAN
-        </Link>
+      <div className={classes["footer-details"]}>
+        <div className={classes["links"]}>
+          <Link to="/" className={classes["link"]}>
+            HOME
+          </Link>
+          <Link to="/about-us" className={classes["link"]}>
+            ABOUT US
+          </Link>
+          <Link to="/subscribe" className={classes["link"]}>
+            CREATE YOUR PLAN
+          </Link>
+        </div>
         <div className={classes["social-icons"]}>
           <svg
             className={`${classes["social-icon"]}`}
