@@ -1,14 +1,15 @@
 import React from "react";
 import classes from "../../css/navbar.module.css";
-import { useState,  } from "react";
-
+import { useState, useContext } from "react";
+import { ShowSubscribeModalContext } from "../../App";
 import NavModal from "./Modal";
-
+import SubscribeModal from "../subscribe components/SubscribeModal";
 const Navbar = () => {
-
+  const { showSubscribeModal } = useContext(ShowSubscribeModalContext);
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isCross, setIsCross] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
   const clickHamburgerHandler = () => {
     setHamburgerClicked(true);
     setIsCross(true);
@@ -72,6 +73,7 @@ const Navbar = () => {
         )}
       </nav>
       {showModal && <NavModal closeNav={clickCrossHandler} />}
+      {showSubscribeModal && <SubscribeModal />}
     </header>
   );
 };

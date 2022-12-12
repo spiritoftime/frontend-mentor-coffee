@@ -1,0 +1,65 @@
+.subscribe-modal {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  border-radius: 4px;
+  width: 80vw;
+  margin: 10%;
+  height: 60vh;
+  z-index: 1;
+
+  background-color: white;
+}
+
+.subheader {
+  padding: 6%;
+  background-color: var(--Dark-grey-blue);
+  font-weight: var(--create-plan-header-font-weight);
+  font-size: var(--btn-font-size);
+  line-height: var(--create-plan-header-line-height);
+  color: var(--light-cream);
+  font-family: "Fraunces", serif;
+  width: 100%;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  block-size: 100%;
+  justify-content: space-around;
+}
+.order-summary {
+  font-weight: var(--collections-header-font-weight);
+  font-family: var(--btn-font-family);
+  line-height: 1.6;
+  color: var(--grey);
+  font-size: var(--why-choose-us-subheader-font-size);
+}
+.variable {
+  color: var(--dark-cyan);
+}
+.confirm-paragraph {
+  font-size: var(--why-choose-us-paragraph-font-size);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
+  line-height: var(--why-choose-us-paragraph-line-height);
+  color: var(--grey);
+
+  opacity: 0.8;
+  font-family: var(--why-choose-us-font-family);
+}
+
+.create--plan--button {
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--dark-cyan);
+  color: var(--light-cream);
+  border-radius: 8px;
+  font-family: var(--btn-font-family);
+
+  padding: 4% 8%;
+  font-weight: var(--btn-font-weight);
+  font-size: 0.9rem;
+}
+.inverted-commas {
+  font-size: var(--why-choose-us-subheader-font-size);
+}

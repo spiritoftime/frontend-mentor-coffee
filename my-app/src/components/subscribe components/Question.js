@@ -1,17 +1,17 @@
 import React, { useCallback } from "react";
 import classes from "../../css/question.module.css";
 import Option from "./Option";
-import { DispatchContext } from "../../pages/Subscribe";
+import { FormContext } from "../../App";
 import { useState, useContext } from "react";
 const Question = ({ question: { question, options, questionNum } }) => {
-  const dispatch = useContext(DispatchContext);
+  const { dispatchHandler } = useContext(FormContext);
   const dispatchOption = useCallback(
     (selectedOption) => {
       const dispatchObj = {};
       dispatchObj[questionNum] = selectedOption;
-      dispatch(dispatchObj);
+      dispatchHandler(dispatchObj);
     },
-    [dispatch, questionNum]
+    [dispatchHandler, questionNum]
   );
 
   const [showOptions, setShowOptions] = useState(true);
