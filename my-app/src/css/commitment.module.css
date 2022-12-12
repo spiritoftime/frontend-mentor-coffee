@@ -28,6 +28,6 @@
   line-height: var(--why-choose-us-paragraph-line-height);
   color: var(--grey);
   font-family: var(--why-choose-us-font-family);
-  opacity: 0.8;
+  text-align: center;
   max-inline-size: 66ch;
 }
