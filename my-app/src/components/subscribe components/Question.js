@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useCallback } from "react";
 import classes from "../../css/question.module.css";
 import Option from "./Option";
-import { useState } from "react";
-const Question = ({ question: { question, options } }) => {
+import { DispatchContext } from "../../pages/Subscribe";
+import { useState, useContext } from "react";
+const Question = ({ question: { question, options, questionNum } }) => {
+  const dispatch = useContext(DispatchContext);
+  const dispatchOption = useCallback(
+    (selectedOption) => {
+      const dispatchObj = {};
+      dispatchObj[questionNum] = selectedOption;
+      dispatch(dispatchObj);
+    },
+    [dispatch, questionNum]
+  );
+
   const [showOptions, setShowOptions] = useState(true);
   const clickDisplayOptionHandler = (e) => {
     setShowOptions((prevstate) => !prevstate);
   };
+  // making the nested options obj into an array of objects to map the options out as JSX elements
   const optionsArray = Object.entries(options).reduce(
     (acc, [key, value], idx) => {
       const obj = { ...value, key: idx };
@@ -36,7 +48,11 @@ const Question = ({ question: { question, options } }) => {
       <div className={classes["options"]}>
         {showOptions &&
           optionsArray.map((option) => (
-            <Option key={option.key} option={option} />
+            <Option
+              dispatchOption={dispatchOption}
+              key={option.key}
+              option={option}
+            />
           ))}
       </div>
     </div>

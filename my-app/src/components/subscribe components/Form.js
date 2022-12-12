@@ -4,6 +4,7 @@ import Question from "./Question";
 const questions = [
   {
     key: "01",
+    questionNum:1,
     question: "How do you drink your coffee?",
     options: {
       1: {
@@ -21,6 +22,7 @@ const questions = [
     },
   },
   {
+    questionNum:2,
     key: "02",
     question: "What type of coffee?",
     options: {
@@ -39,6 +41,7 @@ const questions = [
     },
   },
   {
+    questionNum:3,
     key: "03",
     question: "How much would you like?",
     options: {
@@ -57,6 +60,7 @@ const questions = [
     },
   },
   {
+    questionNum:4,
     key: "04",
     question: "Want us to grind them?",
     options: {
@@ -75,6 +79,7 @@ const questions = [
     },
   },
   {
+    questionNum:5,
     key: "05",
     question: "How often should we deliver?",
     options: {
