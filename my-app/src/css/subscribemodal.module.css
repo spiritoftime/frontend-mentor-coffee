@@ -6,7 +6,7 @@
   border-radius: 4px;
   width: 80vw;
   margin: 10%;
-  height: 60vh;
+
   z-index: 1;
 
   background-color: white;
@@ -25,6 +25,7 @@
 .summary {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   padding: 2% 5%;
   block-size: 100%;
   justify-content: space-around;
@@ -34,7 +35,7 @@
   font-family: var(--btn-font-family);
   line-height: 1.6;
   color: var(--grey);
-  font-size: var(--why-choose-us-subheader-font-size);
+  font-size: 1.2rem;
 }
 .variable {
   color: var(--dark-cyan);

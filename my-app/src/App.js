@@ -16,7 +16,7 @@ function App() {
   const [showSubscribeModal, setShowSubscribeModal] = useState(false);
   const { dispatchHandler, selectedOptions, price } = useSubscribe();
   const formObj = { ...selectedOptions, dispatchHandler };
-  const navBarObj = { price, ...selectedOptions, showSubscribeModal };
+  const navBarObj = { price, ...selectedOptions, showSubscribeModal, setShowSubscribeModal };
 
   return (
     <>

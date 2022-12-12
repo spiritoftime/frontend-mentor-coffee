@@ -4,9 +4,21 @@ import { useContext } from "react";
 import { ShowSubscribeModalContext } from "../../App";
 import classes from "../../css/subscribemodal.module.css";
 const SubscribeModal = () => {
-  const { drinkingMethod, coffeeType, amount, grind, delivery, price } =
-    useContext(ShowSubscribeModalContext);
-
+  const {
+    drinkingMethod,
+    coffeeType,
+    amount,
+    grind,
+    delivery,
+    price,
+    setShowSubscribeModal,
+  } = useContext(ShowSubscribeModalContext);
+  const createOrderHandler = (e) => {
+    setShowSubscribeModal(false);
+    alert("You successfully created an order!");
+    document.body.classList.toggle("overflow");
+    document.getElementById("root").style.backgroundColor = "white";
+  };
   return createPortal(
     <div className={classes["subscribe-modal"]}>
       <h4 className={classes["subheader"]}>Order Summary</h4>
@@ -26,7 +38,10 @@ const SubscribeModal = () => {
           selection if something is off. Subscription discount codes can also be
           redeemed at the checkout.{" "}
         </p>
-        <button className={classes["create--plan--button"]}>
+        <button
+          onClick={createOrderHandler}
+          className={classes["create--plan--button"]}
+        >
           Checkout - ${price} / mo
         </button>
       </div>

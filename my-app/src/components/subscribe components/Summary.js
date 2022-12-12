@@ -6,13 +6,17 @@ import classes from "../../css/summary.module.css";
 import { SetSubscribeModalContext } from "../../App";
 import { FormContext } from "../../App";
 const Summary = () => {
-  const [btnClicked, setBtnClicked] = useState(false);
   const setShowModal = useContext(SetSubscribeModalContext);
   const { drinkingMethod, coffeeType, amount, grind, delivery } =
     useContext(FormContext);
 
   const showModalHandler = () => {
-    setBtnClicked(true);
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", // Optional if you want to skip the scrolling animation
+    });
+    document.body.classList.toggle("overflow");
     setShowModal(true);
     // apply
     document.getElementById("root").style.backgroundColor = "grey";
