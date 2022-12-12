@@ -22,16 +22,18 @@
 
   /* create plan section */
   --create-plan-header-font-weight: 900;
-  --create-plan-header-font-size: 1.8rem;
+  --create-plan-header-font-size: clamp(1.8rem, 1rem + 4vw, 3rem);
   --create-plan-header-line-height: 1;
 
   /* collections section */
   --collections-header-font-weight: 900;
-  --collections-header-font-size: 1.5rem;
+
+  --collections-header-font-size: clamp(1.5rem, 0.9rem + 4vw, 2.8rem);
   --collections-header-line-height: 1.25;
 
   /* why choose us section */
-  --why-choose-us-paragraph-font-size: 0.7rem;
+
+  --why-choose-us-paragraph-font-size: clamp(0.6rem, 0.35rem + 2vw, 1.5rem);
   --why-choose-us-paragraph-line-height: 1.625;
   --why-choose-us-paragraph-font-weight: 400;
   --why-choose-us-subheader-font-size: 1.5rem;
@@ -43,7 +45,8 @@
   /* how-it-works section  */
   --how-it-works-header-font-size: 1.5rem;
   --how-it-works-header-line-height: 1.25;
-  --how-it-works-paragraph-font-size: 0.9rem;
+
+  --how-it-works-paragraph-font-size: clamp(0.9rem, 0.4rem + 3vw, 1.7rem);
   --how-it-works-paragraph-line-height: 1.8;
   --how-it-works-subheader-font-size: 1.75rem;
   --how-it-works-subheader-line-height: 1.15;

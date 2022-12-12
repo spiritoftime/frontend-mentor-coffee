@@ -6,6 +6,9 @@
   gap: 3rem;
   align-items: center;
 }
+.subheader {
+  color: var(--grey);
+}
 .steps {
   display: flex;
   flex-direction: column;

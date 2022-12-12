@@ -10,7 +10,9 @@ const Hero = () => {
   return (
     <section className={classes.hero}>
       <div className={classes["hero-contents"]}>
-        <h1 className={classes["hero-header"]}>Great coffee made simple.</h1>
+        <h1 className={classes["hero-header"]}>
+          Great coffee <br></br> made simple.
+        </h1>
         <p className={classes["hero-description"]}>
           Start your mornings with the world's best coffees. Try our expertly
           curated artisan coffees from our best roasters delivered directly to
