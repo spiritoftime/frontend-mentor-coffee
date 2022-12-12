@@ -27,7 +27,7 @@
   font-weight: var(--why-choose-us-paragraph-font-weight);
   line-height: var(--why-choose-us-paragraph-line-height);
   color: var(--light-cream);
-  text-align: center;
+  text-align: justify;
   opacity: 0.8;
   font-family: var(--why-choose-us-font-family);
 }

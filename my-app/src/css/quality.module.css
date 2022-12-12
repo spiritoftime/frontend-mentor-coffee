@@ -28,7 +28,7 @@
   line-height: var(--create-plan-header-line-height);
   color: var(--light-cream);
   font-family: "Fraunces", serif;
-  text-align: center;
+  text-align: justify;
 }
 .paragraph {
   font-size: var(--why-choose-us-paragraph-font-size);
@@ -38,5 +38,5 @@
   max-inline-size: 66ch;
   opacity: 0.8;
   font-family: var(--why-choose-us-font-family);
-  text-align: center;
+  text-align: justify;
 }

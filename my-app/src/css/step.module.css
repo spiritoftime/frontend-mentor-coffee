@@ -30,7 +30,7 @@
   font-size: var(--how-it-works-paragraph-font-size);
   font-weight: var(-why-choose-us-paragraph-font-weight);
   line-height: var(--why-choose-us-paragraph-line-height);
-  text-align: center;
+  text-align: justify;
 }
 .description {
   color: var(--Dark-grey-blue);
