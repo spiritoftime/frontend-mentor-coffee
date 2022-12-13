@@ -50,3 +50,7 @@
     margin-top: auto;
   }
 }
+.option:hover,
+.selected-option:hover {
+  cursor: pointer;
+}
