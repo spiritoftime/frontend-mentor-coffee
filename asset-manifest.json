@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-mentor-coffee/static/css/main.4a8cf22b.css",
+    "main.css": "/frontend-mentor-coffee/static/css/main.1c29babc.css",
     "main.js": "/frontend-mentor-coffee/static/js/main.b07cf469.js",
     "static/js/787.28cb0dcd.chunk.js": "/frontend-mentor-coffee/static/js/787.28cb0dcd.chunk.js",
     "static/media/image-hero-whitecup.jpg": "/frontend-mentor-coffee/static/media/image-hero-whitecup.531ce5f31b60be0d761f.jpg",
@@ -13,12 +13,12 @@
     "static/media/image-danche.png": "/frontend-mentor-coffee/static/media/image-danche.42b87a7401d1a9631f8a.png",
     "static/media/image-quality.jpg": "/frontend-mentor-coffee/static/media/image-quality.e888f4e152eeb8815b3a.jpg",
     "index.html": "/frontend-mentor-coffee/index.html",
-    "main.4a8cf22b.css.map": "/frontend-mentor-coffee/static/css/main.4a8cf22b.css.map",
+    "main.1c29babc.css.map": "/frontend-mentor-coffee/static/css/main.1c29babc.css.map",
     "main.b07cf469.js.map": "/frontend-mentor-coffee/static/js/main.b07cf469.js.map",
     "787.28cb0dcd.chunk.js.map": "/frontend-mentor-coffee/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a8cf22b.css",
+    "static/css/main.1c29babc.css",
     "static/js/main.b07cf469.js"
   ]
 }
