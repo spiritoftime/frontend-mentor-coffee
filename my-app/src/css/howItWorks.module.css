@@ -58,3 +58,9 @@
     padding: 1rem;
   }
 }
+@media (min-width: 1440px) {
+  .how-it-works {
+    width: 70%;
+    margin: auto;
+  }
+}

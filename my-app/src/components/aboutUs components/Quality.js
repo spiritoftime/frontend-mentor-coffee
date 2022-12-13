@@ -1,14 +1,25 @@
 import React from "react";
 import classes from "../../css/quality.module.css";
 import Coffee from "../../assets/about/mobile/image-quality.jpg";
+import useViewPort from "../../custom-hooks/useViewPort";
+import DesktopCoffee from "../../assets/about/desktop/image-quality.jpg";
 const Quality = () => {
+  const width = useViewPort();
   return (
     <div className={classes["quality-section"]}>
-      <img
-        className={classes["img"]}
-        src={Coffee}
-        alt="top-notch coffee from Coffeeroasters"
-      ></img>
+      {width < 1440 ? (
+        <img
+          className={classes["img"]}
+          src={Coffee}
+          alt="top-notch coffee from Coffeeroasters"
+        ></img>
+      ) : (
+        <img
+          className={classes["img"]}
+          src={DesktopCoffee}
+          alt="top-notch coffee from Coffeeroasters"
+        ></img>
+      )}
       <div className={classes["text-div"]}>
         <h2 className={classes["subheader"]}>Uncompromising quality</h2>
         <p className={classes["paragraph"]}>

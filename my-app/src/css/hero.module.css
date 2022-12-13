@@ -50,10 +50,20 @@
     width: 84%;
     background-position: top right;
     background-size: cover;
+    margin: 0 8% 8%;
   }
   .hero-contents {
     text-align: left;
     align-items: flex-start;
     gap: 2rem;
+    width: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    background: url("../assets/home/desktop/image-hero-coffeepress.jpg")
+      no-repeat;
+    background-size: contain;
+    background-size: 100% auto;
   }
 }

@@ -5,7 +5,9 @@
   position: absolute;
   border-radius: 4px;
   width: 80vw;
-  margin: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   z-index: 1;
 
@@ -63,4 +65,17 @@
 }
 .inverted-commas {
   font-size: var(--why-choose-us-subheader-font-size);
+}
+@media (min-width: 1440px) {
+  .subscribe-modal {
+    gap: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    margin: 0;
+  }
+  .summary {
+    gap: 1.5rem;
+  }
 }

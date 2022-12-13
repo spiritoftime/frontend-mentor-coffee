@@ -43,6 +43,7 @@
 @media (min-width: 640px) {
   .flex-column {
     gap: 2rem;
+    margin: 4% 8%;
   }
   .links {
     flex-direction: row;
@@ -50,5 +51,38 @@
   .social-icons {
     justify-content: center;
     gap: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-details {
+    justify-content: center;
+  }
+  .flex-column {
+    padding: 4% 8%;
+  }
+  .flex-column,
+  .footer-details,
+  .links {
+    flex-direction: row;
+  }
+  .flex-column {
+    justify-content: space-around;
+  }
+  .icon {
+    width: 15rem;
+  }
+
+  .links {
+    width: 40rem;
+    display: flex;
+  }
+  .link {
+    font-size: 1.2rem;
+  }
+  .social-icons {
+    width: fit-content;
+  }
+  .social-icon {
+    width: 2rem;
   }
 }

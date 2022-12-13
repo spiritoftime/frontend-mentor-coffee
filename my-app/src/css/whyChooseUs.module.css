@@ -41,4 +41,19 @@
   margin-bottom: -20rem;
   top: -20rem;
 }
-/* url("../assets/about/mobile/bg-quality.png") */
+@media (min-width: 1440px) {
+  .wrapper-div {
+    margin: 8% 8% -8%;
+  }
+  .choose-us-articles {
+    transform: translateY(-50%);
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 0rem;
+    top: 0rem;
+    /* transform: translateY(50%); */
+  }
+}

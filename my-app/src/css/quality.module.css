@@ -24,7 +24,7 @@
 }
 .subheader {
   font-weight: var(--create-plan-header-font-weight);
-  font-size: 1.6rem;
+  font-size: var(--how-it-works-paragraph-font-size);
   line-height: var(--create-plan-header-line-height);
   color: var(--light-cream);
   font-family: "Fraunces", serif;
@@ -47,5 +47,21 @@
   }
   .img {
     max-inline-size: 75%;
+  }
+  .text-div {
+    padding: 6% 8% 6%;
+  }
+}
+@media (min-width: 1440px) {
+  .quality-section {
+    flex-direction: row;
+  }
+  .img {
+    order: 1;
+  }
+  .subheader {
+    text-align: left;
+    display: block;
+    width: 100%;
   }
 }

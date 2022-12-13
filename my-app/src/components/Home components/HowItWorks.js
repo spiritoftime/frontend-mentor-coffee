@@ -37,9 +37,9 @@ const HowItWorks = () => {
       <h2 className={classes["subheader"]}>How it works</h2>
       {width >= 640 ? (
         <div className={classes["step-bar"]}>
-          <div class={classes["circle"]}></div>
-          <div class={classes["circle"]}></div>
-          <div class={classes["circle"]}></div>
+          <div className={classes["circle"]}></div>
+          <div className={classes["circle"]}></div>
+          <div className={classes["circle"]}></div>
         </div>
       ) : (
         ""

@@ -44,3 +44,17 @@
     text-align: left;
   }
 }
+@media (min-width: 1440px) {
+  .product-article {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .product-description,
+  .product-name {
+    text-align: center;
+  }
+
+  .product-name {
+    font-size: clamp(2rem, 0.2rem + 2vw, 3rem);
+  }
+}

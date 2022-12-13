@@ -3,3 +3,39 @@
   flex-direction: column;
   gap: 3rem;
 }
+.form-question {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.form-step {
+  display: flex;
+  gap: 0.2rem;
+  border-bottom: 1px solid var(--grey);
+}
+
+.step-type,
+.step-number {
+  color: var(--grey);
+  font-size: var(--why-choose-us-subheader-font-size);
+  font-weight: var(--create-plan-header-font-weight);
+  font-family: var(--btn-font-family);
+}
+@media (min-width: 1440px) {
+  .form {
+    flex-direction: row;
+    gap: 0;
+    padding-left: 8%;
+  }
+  .form-question {
+    width: 85%;
+  }
+  .form-toggle {
+    width: 15%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    height: 20rem;
+  }
+}

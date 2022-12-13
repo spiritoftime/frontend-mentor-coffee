@@ -1,9 +1,48 @@
+.steps-div {
+  background-color: var(--dark-blue);
+}
 .steps {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  background-color: var(--dark-blue);
+
   align-items: center;
   padding: 20% 6%;
   border-radius: 10px;
+}
+.step-bar {
+  display: flex;
+  width: 65%;
+  margin: 0 6%;
+  height: 0.2rem;
+  background-color: var(--pink);
+  justify-content: space-between;
+}
+.circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--dark-cyan);
+  transform: translate(-2%, -50%);
+}
+.circle:last-child {
+  transform: translate(6%, -50%);
+}
+@media (min-width: 640px) {
+  .steps-div {
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+    padding: 6% 0;
+    gap: 3rem;
+    border-radius: 8px;
+  }
+
+  .steps {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 6%;
+  }
 }

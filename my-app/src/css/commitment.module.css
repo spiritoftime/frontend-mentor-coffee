@@ -39,6 +39,7 @@
   }
   .text-div {
     align-items: flex-start;
+    margin: auto;
   }
   .img {
     max-inline-size: 40%;

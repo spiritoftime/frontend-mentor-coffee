@@ -1,10 +1,12 @@
 import React from "react";
 import classes from "../../css/form.module.css";
 import Question from "./Question";
+import Summary from "./Summary";
+import useViewPort from "../../custom-hooks/useViewPort";
 const questions = [
   {
     key: "01",
-    questionNum:1,
+    questionNum: 1,
     question: "How do you drink your coffee?",
     options: {
       1: {
@@ -22,7 +24,7 @@ const questions = [
     },
   },
   {
-    questionNum:2,
+    questionNum: 2,
     key: "02",
     question: "What type of coffee?",
     options: {
@@ -41,7 +43,7 @@ const questions = [
     },
   },
   {
-    questionNum:3,
+    questionNum: 3,
     key: "03",
     question: "How much would you like?",
     options: {
@@ -60,7 +62,7 @@ const questions = [
     },
   },
   {
-    questionNum:4,
+    questionNum: 4,
     key: "04",
     question: "Want us to grind them?",
     options: {
@@ -79,7 +81,7 @@ const questions = [
     },
   },
   {
-    questionNum:5,
+    questionNum: 5,
     key: "05",
     question: "How often should we deliver?",
     options: {
@@ -99,11 +101,41 @@ const questions = [
   },
 ];
 const Form = () => {
+  const width = useViewPort();
   return (
     <div className={classes["form"]}>
-      {questions.map((question) => (
-        <Question key={question.key} question={question} />
-      ))}
+      {width >= 1440 ? (
+        <div className={classes["form-toggle"]}>
+          <div className={classes["form-step"]}>
+            <span className={classes["step-number"]}>01</span>
+            <p className={classes["step-type"]}>Preferences</p>
+          </div>
+          <div className={classes["form-step"]}>
+            <span className={classes["step-number"]}>02</span>
+            <p className={classes["step-type"]}>Bean Type</p>
+          </div>
+          <div className={classes["form-step"]}>
+            <span className={classes["step-number"]}>03</span>
+            <p className={classes["step-type"]}>Quantity</p>
+          </div>
+          <div className={classes["form-step"]}>
+            <span className={classes["step-number"]}>04</span>
+            <p className={classes["step-type"]}>Grind option</p>
+          </div>
+          <div className={classes["form-step"]}>
+            <span className={classes["step-number"]}>05</span>
+            <p className={classes["step-type"]}>Deliveries</p>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+      <div className={classes["form-question"]}>
+        {questions.map((question) => (
+          <Question key={question.key} question={question} />
+        ))}
+        <Summary />
+      </div>
     </div>
   );
 };

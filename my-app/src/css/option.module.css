@@ -27,7 +27,7 @@
 .description,
 .selected-description {
   font-size: var(--how-it-works-paragraph-font-size);
-  font-weight: var(-why-choose-us-paragraph-font-weight);
+  font-weight: var(--why-choose-us-paragraph-font-weight);
   line-height: var(--why-choose-us-paragraph-line-height);
 }
 .description {
@@ -36,4 +36,17 @@
 .selected-subheader,
 .selected-description {
   color: var(--light-cream);
+}
+@media (min-width: 640px) {
+  .description,
+  .selected-description {
+    font-size: var(--how-it-works-paragraph-font-size-tablet);
+  }
+  .subheader,
+  .selected-subheader {
+    font-size: var(--collections-header-font-size-tablet);
+  }
+  .description {
+    margin-top: auto;
+  }
 }

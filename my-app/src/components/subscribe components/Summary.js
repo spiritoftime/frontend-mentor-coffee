@@ -19,7 +19,8 @@ const Summary = () => {
     document.body.classList.toggle("overflow");
     setShowModal(true);
     // apply
-    document.getElementById("root").style.backgroundColor = "grey";
+    document.getElementById("root").style.background = "black";
+    document.getElementById("root").style.opacity = "0.5";
   };
 
   return (

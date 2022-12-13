@@ -43,3 +43,28 @@
   font-weight: var(--btn-font-weight);
   font-size: var(--btn-font-size);
 }
+@media (min-width: 640px) {
+  .hero {
+    margin: 0 8%;
+    background: url("../assets/plan/tablet/image-hero-blackcup.jpg") no-repeat;
+    height: 25.5rem;
+    background-position: top;
+    background-size: cover;
+    align-items: center;
+  }
+  .hero-contents {
+    align-items: flex-start;
+    width: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    background: url("../assets/plan/desktop/image-hero-blackcup.jpg") no-repeat;
+  }
+  .hero-contents {
+    width: 50%;
+  }
+  .hero-header {
+    font-size: 4rem;
+  }
+}

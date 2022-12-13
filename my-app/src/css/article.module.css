@@ -59,3 +59,17 @@
     width: 100%;
   }
 }
+@media (min-width: 1440px) {
+  .article {
+    height: 25rem;
+    border-radius: 8px;
+  }
+  .article-contents {
+    flex-direction: column;
+    padding: 6%;
+  }
+  .article-text,
+  .description {
+    text-align: center;
+  }
+}

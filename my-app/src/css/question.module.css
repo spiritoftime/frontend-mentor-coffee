@@ -27,3 +27,20 @@
 .close {
   transform: rotate(180deg);
 }
+@media (min-width: 640px) {
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .question {
+    padding: 0 13%;
+  }
+}
+@media (min-width: 1440px) {
+  .question {
+    padding: 0 9%;
+  }
+}

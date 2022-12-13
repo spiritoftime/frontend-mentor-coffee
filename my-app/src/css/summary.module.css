@@ -43,3 +43,13 @@
   font-weight: var(--btn-font-weight);
   font-size: var(--btn-font-size);
 }
+@media (min-width: 640px) {
+  .create--plan--button {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .summary {
+    margin: 0 9%;
+  }
+}

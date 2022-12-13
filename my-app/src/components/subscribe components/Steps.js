@@ -1,6 +1,7 @@
 import React from "react";
 import Step from "../Home components/Step";
 import classes from "../../css/subscribeSteps.module.css";
+import useViewPort from "../../custom-hooks/useViewPort";
 const steps = [
   {
     step: "01",
@@ -28,11 +29,23 @@ const steps = [
   },
 ];
 const Steps = () => {
+  const width = useViewPort();
   return (
-    <div className={classes["steps"]}>
-      {steps.map((step) => (
-        <Step {...step} />
-      ))}
+    <div className={classes["steps-div"]}>
+      {width >= 640 ? (
+        <div className={classes["step-bar"]}>
+          <div className={classes["circle"]}></div>
+          <div className={classes["circle"]}></div>
+          <div className={classes["circle"]}></div>
+        </div>
+      ) : (
+        ""
+      )}
+      <div className={classes["steps"]}>
+        {steps.map((step) => (
+          <Step {...step} />
+        ))}
+      </div>
     </div>
   );
 };

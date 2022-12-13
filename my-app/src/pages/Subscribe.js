@@ -27,7 +27,6 @@ const Subscribe = ({ passPropsUpHandler }) => {
         <Steps />
 
         <Form />
-        <Summary />
       </div>
     </>
   );
