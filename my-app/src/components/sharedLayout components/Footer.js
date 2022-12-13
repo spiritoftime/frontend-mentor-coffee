@@ -1,10 +1,15 @@
 import React from "react";
 import classes from "../../css/footer.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const navigateHandler = (e) => {
+    if (location.pathname !== "/") navigate("/");
+  };
   return (
     <div className={classes["flex-column"]}>
-      <svg
+      <svg onClick={navigateHandler}
         className={classes.icon}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="1 1 235 25"

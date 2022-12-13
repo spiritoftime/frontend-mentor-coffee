@@ -60,6 +60,7 @@
 @media (min-width: 1440px) {
   .hero {
     background: url("../assets/plan/desktop/image-hero-blackcup.jpg") no-repeat;
+    background-size: cover;
   }
   .hero-contents {
     width: 50%;

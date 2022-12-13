@@ -1,6 +1,9 @@
 .icon {
   width: 8.5rem;
 }
+.icon:hover {
+  cursor: pointer;
+}
 
 .nav-icon {
   height: 1rem;

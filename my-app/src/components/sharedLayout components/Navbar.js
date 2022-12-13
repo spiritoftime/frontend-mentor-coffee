@@ -6,14 +6,18 @@ import NavModal from "./Modal";
 import SubscribeModal from "../subscribe components/SubscribeModal";
 import useViewPort from "../../custom-hooks/useViewPort";
 import { Link } from "react-router-dom";
-
+import { useNavigate, useLocation } from "react-router-dom";
 const Navbar = () => {
   const width = useViewPort();
   const { showSubscribeModal } = useContext(ShowSubscribeModalContext);
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [isCross, setIsCross] = useState(false);
   const [showModal, setShowModal] = useState(false);
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  const navigateHandler = (e) => {
+    if (location.pathname !== "/") navigate("/");
+  };
   const clickHamburgerHandler = () => {
     setHamburgerClicked(true);
     setIsCross(true);
@@ -32,6 +36,7 @@ const Navbar = () => {
     <header>
       <nav className={classes["navbar-flex"]}>
         <svg
+          onClick={navigateHandler}
           className={classes.icon}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="1 1 235 25"

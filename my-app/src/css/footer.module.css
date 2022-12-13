@@ -6,6 +6,9 @@
 .icon {
   width: 8.5rem;
 }
+.icon:hover{
+  cursor: pointer;
+}
 .flex-column {
   padding: 8% 0;
   display: flex;
