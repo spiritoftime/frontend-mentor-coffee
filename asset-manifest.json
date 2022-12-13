@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor-coffee/static/css/main.4a8cf22b.css",
+    "main.js": "/frontend-mentor-coffee/static/js/main.b07cf469.js",
+    "static/js/787.28cb0dcd.chunk.js": "/frontend-mentor-coffee/static/js/787.28cb0dcd.chunk.js",
+    "static/media/image-hero-whitecup.jpg": "/frontend-mentor-coffee/static/media/image-hero-whitecup.531ce5f31b60be0d761f.jpg",
+    "static/media/image-hero-coffeepress.jpg": "/frontend-mentor-coffee/static/media/image-hero-coffeepress.73479cf61bb756da988d.jpg",
+    "static/media/image-hero-blackcup.jpg": "/frontend-mentor-coffee/static/media/image-hero-blackcup.176b6072d3b058612a4e.jpg",
+    "static/media/image-commitment.jpg": "/frontend-mentor-coffee/static/media/image-commitment.e6328e4596cb9edf2207.jpg",
+    "static/media/image-piccollo.png": "/frontend-mentor-coffee/static/media/image-piccollo.304c8160c733287e64b9.png",
+    "static/media/image-gran-espresso.png": "/frontend-mentor-coffee/static/media/image-gran-espresso.fc5aa0dc94bebcf9c01e.png",
+    "static/media/image-planalto.png": "/frontend-mentor-coffee/static/media/image-planalto.33bcba484384d76cf45b.png",
+    "static/media/image-danche.png": "/frontend-mentor-coffee/static/media/image-danche.42b87a7401d1a9631f8a.png",
+    "static/media/image-quality.jpg": "/frontend-mentor-coffee/static/media/image-quality.e888f4e152eeb8815b3a.jpg",
+    "index.html": "/frontend-mentor-coffee/index.html",
+    "main.4a8cf22b.css.map": "/frontend-mentor-coffee/static/css/main.4a8cf22b.css.map",
+    "main.b07cf469.js.map": "/frontend-mentor-coffee/static/js/main.b07cf469.js.map",
+    "787.28cb0dcd.chunk.js.map": "/frontend-mentor-coffee/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a8cf22b.css",
+    "static/js/main.b07cf469.js"
+  ]
+}
