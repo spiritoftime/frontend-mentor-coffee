@@ -1,7 +1,6 @@
 .hero {
   margin: 8%;
   background: url("../assets/home/mobile/image-hero-coffeepress.jpg") no-repeat;
-
   height: 20rem;
   border-radius: 10px;
   background-size: cover;
@@ -42,4 +41,19 @@
   max-width: fit-content;
   font-weight: var(--btn-font-weight);
   font-size: var(--btn-font-size);
+}
+@media (min-width: 640px) {
+  .hero {
+    background: url("../assets/home/tablet/image-hero-coffeepress.jpg")
+      no-repeat;
+    height: 33rem;
+    width: 84%;
+    background-position: top right;
+    background-size: cover;
+  }
+  .hero-contents {
+    text-align: left;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }

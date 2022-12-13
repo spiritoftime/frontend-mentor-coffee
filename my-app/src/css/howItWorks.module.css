@@ -26,6 +26,25 @@
   font-weight: var(--btn-font-weight);
   font-size: var(--btn-font-size);
 }
+.step-bar {
+  display: flex;
+  width: 80%;
+  height: 0.2rem;
+  background-color: var(--pink);
+  justify-content: space-between;
+}
+.circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid var(--dark-cyan);
+  transform: translate(-2%, -50%);
+}
+.circle:last-child {
+  transform: translate(6%, -50%);
+}
+
 @media (min-width: 640px) {
   .steps {
     display: flex;

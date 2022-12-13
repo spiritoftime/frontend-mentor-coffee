@@ -31,3 +31,24 @@
   text-align: justify;
   max-inline-size: 66ch;
 }
+@media (min-width: 640px) {
+  .commitment__div {
+    flex-direction: row;
+    gap: 4rem;
+    margin: 12% 8%;
+  }
+  .text-div {
+    align-items: flex-start;
+  }
+  .img {
+    max-inline-size: 40%;
+    max-block-size: 100%;
+  }
+  .subheader {
+    font-size: var(--collections-header-font-size-tablet);
+    text-align: left;
+  }
+  .description {
+    font-size: var(--why-choose-us-paragraph-font-size-tablet);
+  }
+}

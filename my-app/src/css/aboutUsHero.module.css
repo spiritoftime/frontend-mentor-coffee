@@ -31,3 +31,13 @@
   font-family: var(--why-choose-us-font-family);
   opacity: 0.8;
 }
+@media (min-width: 640px) {
+  .hero {
+    background: url("../assets/about/tablet/image-hero-whitecup.jpg") no-repeat;
+
+    height: 33rem;
+    width: 84%;
+    background-position: top right;
+    background-size: cover;
+  }
+}

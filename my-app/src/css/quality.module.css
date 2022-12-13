@@ -40,3 +40,12 @@
   font-family: var(--why-choose-us-font-family);
   text-align: justify;
 }
+@media (min-width: 640px) {
+  .quality-section {
+    gap: 0rem;
+    margin: 13rem 8% 6rem;
+  }
+  .img {
+    max-inline-size: 75%;
+  }
+}

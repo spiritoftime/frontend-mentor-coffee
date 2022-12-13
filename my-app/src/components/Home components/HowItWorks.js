@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "../../css/howItWorks.module.css";
 import { useNavigate } from "react-router-dom";
+import useViewPort from "../../custom-hooks/useViewPort";
 import Step from "./Step";
 const steps = [
   {
@@ -26,6 +27,7 @@ const steps = [
   },
 ];
 const HowItWorks = () => {
+  const width = useViewPort();
   const navigate = useNavigate();
   const navigateHandler = (e) => {
     navigate("/subscribe");
@@ -33,6 +35,15 @@ const HowItWorks = () => {
   return (
     <section className={classes["how-it-works"]}>
       <h2 className={classes["subheader"]}>How it works</h2>
+      {width >= 640 ? (
+        <div className={classes["step-bar"]}>
+          <div class={classes["circle"]}></div>
+          <div class={classes["circle"]}></div>
+          <div class={classes["circle"]}></div>
+        </div>
+      ) : (
+        ""
+      )}
       <div className={classes["steps"]}>
         {steps.map((step) => (
           <Step {...step} />

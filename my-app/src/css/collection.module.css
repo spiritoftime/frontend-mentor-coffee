@@ -29,4 +29,8 @@
   .products {
     gap: 3rem;
   }
+
+  .subheader {
+    font-size: 5rem;
+  }
 }
