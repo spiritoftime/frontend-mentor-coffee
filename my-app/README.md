@@ -38,7 +38,7 @@ return null;
 To conditionally render elements based on viewport width, need useViewPort custom hook.
 
 4. Unlimited render error
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b2493ce-579f-4af0-8ea7-0d39c3e2a15c/Untitled.png)
+   ![Untitled]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b2493ce-579f-4af0-8ea7-0d39c3e2a15c/Untitled.png](https://www.notion.so/Debugging-react-11b4a657369e4b0383f29e72515428c7#21b5ca6e9b2b412c90c58a7ffb551e99))
    Problem: i am assuming selected is immediately updating, however setSelected is an async function, hence when the user selects an option, dispatchOption is still passing “”
 
 tried wrapping that selected option into useEffect and useCallback, then encountered unlimited render error:
