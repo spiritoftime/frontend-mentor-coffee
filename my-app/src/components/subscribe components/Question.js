@@ -30,10 +30,12 @@ const Question = ({ question: { question, options, questionNum } }) => {
 
   return (
     <div className={classes["question"]}>
-      <div className={classes["question-bar"]}>
+      <div
+        onClick={clickDisplayOptionHandler}
+        className={classes["question-bar"]}
+      >
         <h2 className={classes["question-subheader"]}>{question}</h2>
         <svg
-          onClick={clickDisplayOptionHandler}
           className={showOptions ? classes["icon"] : classes["close"]}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0.59 0.59 18.19 11.92"
