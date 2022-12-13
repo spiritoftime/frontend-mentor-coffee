@@ -35,7 +35,24 @@ behavior: "instant", // Optional if you want to skip the scrolling animation
 // why is pathname able to be added as a dependency here, even though pathname is not used inside of the useEffect?
 return null;
 }
+To conditionally render elements based on viewport width, need useViewPort custom hook.
 
-To go learn:
+4. Unlimited render error
+   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b2493ce-579f-4af0-8ea7-0d39c3e2a15c/Untitled.png)
+   Problem: i am assuming selected is immediately updating, however setSelected is an async function, hence when the user selects an option, dispatchOption is still passing “”
 
-1. custom-hook scrollToTop to scroll to the top whenever we change routes.
+tried wrapping that selected option into useEffect and useCallback, then encountered unlimited render error:
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/599db4d6-3a04-4a3a-82d6-27d0331d6a93/Untitled.png)
+problem 1: useReducer was always returning a brand new state!
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c172aaef-ce7d-4804-914d-76eb9926e6df/Untitled.png)
+
+even if action.actionKey was equal to stateKeys[actionKey - 1], i was still returning a brand new destructured object. this changes state constantly!
+
+Problem 2: At Option.js, i was receiving a dispatchOption function as a prop from Question.js. However, i did not wrap it with a useCallback function **AT QUESTION.JS (i wrapped it at Option.js)** before passing it into Option.js. This caused dispatchOption to constantly be recreated whenever Question.js is rendered, which caused dispatchOption to keep changing, causing infinite render error!
+
+5. in order for routing to work when deploying to github.pages, you need to change BrowserRouter to Hashrouter (see index.js)
+
+6. How to align paragraphs, see steps section, tablet.
+
+- problem: As the lines for each paragraph increases, the size needed for that paragraph increases, so the corresponding gap between elements decreased. What i tried to do: set fixed height for the paragraph. However, this does not scale very well with responsiveness.
