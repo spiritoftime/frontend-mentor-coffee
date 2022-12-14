@@ -56,8 +56,9 @@
   .subscribe-subheader {
     height: 40px;
   }
+
   .description {
-    height: 14.625rem;
+    height: 60%;
   }
   .subscribe-description {
     height: 65%;
