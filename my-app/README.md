@@ -38,14 +38,17 @@ return null;
 To conditionally render elements based on viewport width, need useViewPort custom hook.
 
 4. Unlimited render error
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b2493ce-579f-4af0-8ea7-0d39c3e2a15c/Untitled.png)
+   ![Untitled]![dispatchcontext](https://user-images.githubusercontent.com/98036884/207301582-02c69351-d421-4019-b159-0145333d0918.PNG)
+
    Problem: i am assuming selected is immediately updating, however setSelected is an async function, hence when the user selects an option, dispatchOption is still passing “”
 
 tried wrapping that selected option into useEffect and useCallback, then encountered unlimited render error:
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/599db4d6-3a04-4a3a-82d6-27d0331d6a93/Untitled.png)
+![Untitled]![unlimitedrender](https://user-images.githubusercontent.com/98036884/207301798-b640d820-7d23-4ab3-a6b3-76d1ba8290f9.PNG)
+
 problem 1: useReducer was always returning a brand new state!
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c172aaef-ce7d-4804-914d-76eb9926e6df/Untitled.png)
+![Untitled]![usereducer](https://user-images.githubusercontent.com/98036884/207301900-5850437d-d618-426f-8a92-debcf5b9b6de.PNG)
+
 
 even if action.actionKey was equal to stateKeys[actionKey - 1], i was still returning a brand new destructured object. this changes state constantly!
 
