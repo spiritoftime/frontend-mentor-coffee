@@ -8,6 +8,9 @@
   display: flex;
   justify-content: space-between;
 }
+.question-bar:hover {
+  cursor: pointer;
+}
 .options {
   display: flex;
   flex-direction: column;

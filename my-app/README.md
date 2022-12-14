@@ -56,3 +56,4 @@ Problem 2: At Option.js, i was receiving a dispatchOption function as a prop fro
 6. How to align paragraphs, see steps section, tablet.
 
 - problem: As the lines for each paragraph increases, the size needed for that paragraph increases, so the corresponding gap between elements decreased. What i tried to do: set fixed height for the paragraph. However, this does not scale very well with responsiveness.
+  EDIT: setted the subheader height to a fixed height (pixels), and play around with the % for the .paragraph at subscribe page.
