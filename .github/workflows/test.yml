@@ -14,6 +14,7 @@ jobs:
         working-directory: ./my-app
         run: npm ci
       - name: Run tests
+        working-directory: ./my-app
         run: npm test
           
         
